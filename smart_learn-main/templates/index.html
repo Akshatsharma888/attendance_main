@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart Attendance</title>
+</head>
+<body>
+    <h1>Welcome to the Smart Attendance System</h1>
+    <p>Please upload a single face photo for training or a group photo for attendance marking.</p>
+    
+    <h2>Train</h2>
+    <form action="/train" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" accept="image/png, image/jpeg">
+        <input type="submit" value="Upload Image for Training">
+    </form>
+
+    <h2>Mark Attendance</h2>
+    <form action="/mark_attendance" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" accept="image/png, image/jpeg">
+        <input type="submit" value="Upload Image for Attendance">
+    </form>
+</body>
+</html>
